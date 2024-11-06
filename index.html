@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yoshidevsss' Lair</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #151530;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+ul#mainlist {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+ul#mainlist li {
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.content {
+    width: 60%;
+    margin: 0 20px;
+}
+
+a {
+    color: #0ff;
+}
+
+p#repo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body class="load">
+    <ul id="mainlist">
+        <li id="info-hi">
+            <img src="costume1.svg" />
+            <div class="content">
+                <h1>Yo, welcome in.</h1>
+                <p>I'm Yoshidevsss. This is my spot for tools, experiments, and a few random projects – mostly stuff from my journey into code and security. Not here for the usual dev nonsense, we’re diving straight into the fun side of tech.</p>
+            </div>
+        </li>
+        <li id="info-tools">
+            <div class="content">
+                <h1>Tools & Stuff</h1>
+                <p>Some projects I put together, some in the works:</p>
+                <ul>
+                    <li><a href="https://mp3tobytebeat.squareweb.app" target="_blank">MP3 to Bytebeat</a> – messin’ with sound</li>
+                    <li><span>Midi to Bytebeat – Coming Soon™</span></li>
+                    <li><a href="https://github.com/yoshidevsss/files/raw/refs/heads/main/ometv-resolver.exe" target="_blank">OmeTv IP Puller</a> – a little “harmless” chaos</li>
+                </ul>
+            </div>
+            <img src="costume2.svg" />
+        </li>
+        <li id="info-languages">
+            <div class="content">
+                <h1>Languages I Mess With</h1>
+                <p>Here’s my tech stack – some skills sharper than others:</p>
+                <ul>
+                    <li>Python (got some solid skills here)</li>
+                    <li>Node.js (mehhh... decent)</li>
+                    <li>C# (a bit more confident with this one)</li>
+                </ul>
+            </div>
+            <img src="costume3.svg" />
+        </li>
+    </ul>
+    <p id="repo">Wanna dig deeper? Check the rest on GitHub: <a href="https://github.com/yoshidevsss">GitHub</a>.</p>
+    <script>
+    window.onload = () => {
+        document.querySelectorAll("a").forEach((a) => a.setAttribute("target", "_blank"));
+    };
+    </script>
+</body>
+</html>
